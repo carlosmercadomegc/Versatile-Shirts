@@ -22,6 +22,22 @@ body {
   color: #fff;
   padding: 24px;
 }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.hero {
+  position: relative;
+}
+
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
+}
 
 
 section {
