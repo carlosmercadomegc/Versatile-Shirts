@@ -1,72 +1,69 @@
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f2;
-    color: #111;
-  }
-  
-  .hero {
-    background-image: url(Versatile (1));
-    background-size: cover;
-    background-position: center;
-  
-    min-height: 65vh;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  align-items: center;
-  text-align: center;
-  
-    padding: 48px;
-    color: #fff;
-    position: relative;
-  }
-  
-  
-    min-height: 60vh;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  
-    text-align: center;
-    color: #fff;
-    padding: 24px;
-  }
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.45);
-  }
-  
-  .hero {
-    position: relative;
-  }
-  
-  .hero h1,
-  .hero p {
-    position: relative;
-    z-index: 1;
-  }
-  
-  
-  section {
-    padding: 24px;
-    max-width: 900px;
-    margin: auto;
-  }
-  
-  .card {
-    background: #fff;
-    border-radius: 10px;
-    padding: 16px;
-    margin-bottom: 16px;
-  }
-  
-  .price {
-    font-weight: bold;
-    margin-top: 8px;
-  }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #111;
+}
+
+/* HERO HEADER */
+.hero {
+  background-image: url("../img/versatile-1.jpg");
+  background-size: cover;
+  background-position: center;
+
+  min-height: 65vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* cambia aquí */
+  align-items: flex-start;   /* cambia aquí */
+
+  padding: 48px;
+  color: #fff;
+  position: relative;
+}
+
+/* Overlay oscuro */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Texto encima del overlay */
+.hero h1,
+.hero p {
+  position: relative;
+  z-index: 1;
+}
+
+/* Tipografía */
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  max-width: 600px;
+}
+
+/* CONTENIDO */
+section {
+  padding: 24px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.price {
+  font-weight: bold;
+  margin-top: 8px;
+}
