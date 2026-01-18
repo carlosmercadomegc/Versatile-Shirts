@@ -5,12 +5,24 @@ body {
   color: #111;
 }
 
-header {
-  background-color: #000;
+.hero {
+  background-image: url("../img/versatile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 60vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
   color: #fff;
   padding: 24px;
-  text-align: center;
 }
+
 
 section {
   padding: 24px;
