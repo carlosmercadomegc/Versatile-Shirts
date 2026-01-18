@@ -6,7 +6,7 @@ body {
 }
 
 .hero .hero {
-  background-image: url("../img/header-nueva.jpg");
+  background-image: url(Versatile (1));
   background-size: cover;
   background-position: center;
 
@@ -14,8 +14,9 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+  justify-content: center;
+align-items: center;
+text-align: center;
 
   padding: 48px;
   color: #fff;
