@@ -7,7 +7,7 @@ body {
 
 /* HERO HEADER */
 .hero {
-  background-image: url (Versatilenoman);
+  background-image: url("../img/versatile-noman.jpg");
   background-size: cover;
   background-position: center;
 
